@@ -3,10 +3,15 @@ import './Banner.css';
 const Banner = () => {
     return(
         <div className='banner'>
-            <img 
-                src='/assets/banner.png' 
-                alt='Banner principal com 5 personagens'>
-            </img>
+            <nav>
+                <p>Icon</p>
+                <div>
+                    <a href='#'>Visite o projeto</a>
+                    <span>Config</span>
+                </div>
+            </nav>
+            <h1>Forme equipes <em>fantásticas!</em> </h1>
+            <p>Monte, organize e altere suas equipes com esse organograma.</p>
         </div>
     );
 };
