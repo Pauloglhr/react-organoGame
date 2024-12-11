@@ -1,18 +1,22 @@
 .banner {
-    background-color: #C2B6A1;
-    margin: 16px auto;
-    max-width: 80%;
+    background-image: url('../../../public/assets/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 32px;
+    max-width: 100%;
     padding: 16px;
-    height: 320px;
-    border-radius: 16px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.032);
+    height: 480px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: #F6EFEE;
 }
 
 .banner h1 {
-    margin: 0px;
+    font-size: 2.5rem;
+    width: 35%;
 }
 
 .banner nav {
@@ -24,5 +28,15 @@
 
 .banner nav > div {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.banner nav > div a {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #F6EFEE;
+    text-align: center;
 }

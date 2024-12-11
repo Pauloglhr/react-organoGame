@@ -6,7 +6,7 @@ const Banner = () => {
             <nav>
                 <p>Icon</p>
                 <div>
-                    <a href='#'>Visite o projeto</a>
+                    <a href='https://github.com/Pauloglhr/react-organoGame' target='_blank' rel='noreferrer'>Visite o projeto</a>
                     <span>Config</span>
                 </div>
             </nav>

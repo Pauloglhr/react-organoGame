@@ -1,0 +1,30 @@
+.formulario {
+    background-color: rgb(0, 0, 0);
+    max-width: 90%;
+    height: 480px;
+    margin: 16px auto;
+    display: flex;
+    color: #F6EFEE;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.formulario .formulario-imagem{
+    background-image: url('../../../public/assets/form-image.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;;
+    background-size: cover;
+    width: 50%;
+    border-radius: 8px 0 0 8px;
+
+}
+
+.formulario .formulario-dados {
+    padding: 16px;
+    width: 50%;
+}
+
+.formulario .formulario-dados h2 {
+    text-align: center;
+}
