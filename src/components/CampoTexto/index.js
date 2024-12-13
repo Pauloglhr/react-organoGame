@@ -1,15 +1,16 @@
 import './Input.css';
 
-const Input = (props) => {
+const CampoTexto = (props) => {
     return(
-        <div className='input'>
+        <div className='campoTexto'>
             <label htmlFor={props.label}><strong>{props.label}</strong></label> 
             <input
                 id={props.label} 
                 placeholder={props.placeholder}
+                required={props.required}
             />
         </div>
     );
 };
 
-export default Input;
+export default CampoTexto;
