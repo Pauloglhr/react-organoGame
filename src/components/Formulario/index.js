@@ -4,15 +4,7 @@ import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
 
-const Formulario = () => {
-
-    const jogos = [
-        'League of Legends',
-        'PUBG',
-        'Counter-Strike',
-        'Efootball',
-        'Overwatch'
-    ]
+const Formulario = (props) => {
 
     const aoSalvar = (evento) =>{
         evento.preventDefault();
@@ -22,6 +14,8 @@ const Formulario = () => {
             imagem,
             jogo
         }
+        console.log(colaborador);
+        
     }
 
     const [nome, setNome] = useState('');
@@ -37,7 +31,7 @@ const Formulario = () => {
                 <CampoTexto aoAlterado={nome => setNome(nome)} label={'Nome'} placeholder={'Digite o seu nome'} required={true}/>
                 <CampoTexto aoAlterado={funcao => setFuncao(funcao)} label={'Função'} placeholder={'Digite sua função'} required={true}/>
                 <CampoTexto aoAlterado={imagem => setImagem(imagem)} label={'Imagem'} placeholder={'Informe o endereço da imagem'} required={true}/>
-                <ListaSuspensa aoAlterado={jogo => setJogo(jogo)} label={'Jogos'} itens={jogos} required={true}/>
+                <ListaSuspensa aoAlterado={jogo => setJogo(jogo)} label={'Jogos'} itens={props.jogos} required={true}/>
                 <Botao>
                     Criar Jogador
                 </Botao>
