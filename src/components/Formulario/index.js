@@ -4,7 +4,7 @@ import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
 
-const Formulario = (props) => {
+const Formulario = ({jogos}) => {
 
     const aoSalvar = (evento) =>{
         evento.preventDefault();
@@ -31,7 +31,7 @@ const Formulario = (props) => {
                 <CampoTexto aoAlterado={nome => setNome(nome)} label={'Nome'} placeholder={'Digite o seu nome'} required={true}/>
                 <CampoTexto aoAlterado={funcao => setFuncao(funcao)} label={'Função'} placeholder={'Digite sua função'} required={true}/>
                 <CampoTexto aoAlterado={imagem => setImagem(imagem)} label={'Imagem'} placeholder={'Informe o endereço da imagem'} required={true}/>
-                <ListaSuspensa aoAlterado={jogo => setJogo(jogo)} label={'Jogos'} itens={props.jogos} required={true}/>
+                <ListaSuspensa aoAlterado={jogo => setJogo(jogo)} label={'Jogos'} itens={jogos} required={true}/>
                 <Botao>
                     Criar Jogador
                 </Botao>

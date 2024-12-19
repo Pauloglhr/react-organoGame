@@ -1,0 +1,42 @@
+.jogador {
+   width: 250px;
+   background-color: #ffffff;
+   overflow-wrap: break-word;
+   word-break: break-all;
+   color: black;
+   border-radius: 8px;
+   height: 250px;
+   position: relative;
+}
+
+.jogador img {
+    width: 6rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    right: 75px;
+}
+
+.jogador-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 60%;
+    width: 100%;
+    box-sizing: content-box;
+    font-family: "Inter", sans-serif;
+}
+
+.jogador-dados span {
+    font-weight: bold;
+    color: #7D83FF;
+}
+
+.jogador-dados p {
+    font-weight: 300;
+}
+
+.bg-color {
+    height: 40%;
+    border-radius: 8px 8px 0 0;
+}

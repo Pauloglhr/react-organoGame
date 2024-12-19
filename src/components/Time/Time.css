@@ -1,0 +1,21 @@
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.time h4 {
+    border-bottom: 4px solid;
+    font-size: 1.5em;
+    padding-bottom: 8px;
+}
+
+.jogadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
